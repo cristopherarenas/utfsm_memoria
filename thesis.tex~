@@ -85,8 +85,8 @@
 
 \selectlanguage{spanish}
 
-\profguia{Claudio Lobos}
-\profcorr{Diego Arroyuelo}
+\profguia{Profesor Guia}
+\profcorr{Profesor Correferente}
 
 % Archivo de Agradecimientos
 \ack{include/acknowledgements}
