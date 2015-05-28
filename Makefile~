@@ -2,7 +2,9 @@
 NOMBRE=thesis
 SHELL=/bin/bash
 
-all:$(NOMBRE).tex include/*.tex
+all: images $(NOMBRE).pdf
+
+$(NOMBRE).pdf:$(NOMBRE).tex include/*.tex
 	@echo "   Making pdf for first time..."
 	pdflatex -halt-on-error $(NOMBRE).tex #> .my_log || (cat .my_log && rm .my_log && exit 1)
 	echo "   Making bibtex..."
@@ -14,4 +16,11 @@ all:$(NOMBRE).tex include/*.tex
 clean:
 	-rm -f $(NOMBRE).{aux,toc,log,tmp,dvi,idx,ilg,ind,out,bbl,blg,lol,lof,lot} .my_log include/*.aux
 
+distclean: clean
+	-make -C images clean
+	-rm -f $(NOMBRE).pdf
 
+images:
+	-make -C images
+
+.PHONY: all clean distclean images

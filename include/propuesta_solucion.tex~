@@ -1,10 +1,10 @@
 \section{Propuesta de Solución}
 
-Para resolver el problema de representación en las mallas de volumen, se plantea una solución que está divivida en dos etapas: detección de características y representación de dichas características en la malla de volumen.
+La solución propuesta considera dos etapas. En primer lugar se realiza una detección de características finas en la malla de superficie entrante. Luego, con la información proporcionada se procederá a corregir la representación en la malla de volumen.
 
 \subsection{Detección de características}
 
-Para la detección de Características Finas en la malla de superficie se utilizará la información que proporcionan los vectores normales de cada elemento. La información con la que se cuenta es un archivo en formato \textit{mdl} que contiene los vértices y triángulos. Este archivo sirve de entrada al algoritmo actual que genera la malla de volumen. 
+Para la detección de características se 
 
 %\begin{algorithm}
 %\caption{Detección de Características v1.0}

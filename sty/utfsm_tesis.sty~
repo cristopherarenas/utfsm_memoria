@@ -407,8 +407,8 @@ con el estilo de documento `report'}{Usted debería leer la documentación de UT
 \def\signaturepage{
 	\thispagestyle{empty}
 	\begin{center}
-		{\fontsize{18pt}{1em}\selectfont \bf UNIVERSIDAD T\'ECNICA FEDERICO SANTA MAR\'IA}\\ \vspace{0.5cm}
-		{\fontsize{16pt}{1em}\selectfont \bf DEPARTAMENTO DE \uppercase\expandafter{\@dept}}\\
+		{\fontsize{17pt}{1em}\selectfont \bf UNIVERSIDAD T\'ECNICA FEDERICO SANTA MAR\'IA}\\
+		{\fontsize{15.5pt}{1em}\selectfont \bf DEPARTAMENTO DE \uppercase\expandafter{\@dept}}\\
 		{\fontsize{14pt}{1em}\selectfont \bf SANTIAGO -- CHILE}\\ \vspace{2cm}
 		\includegraphics[height=33mm]{images/logo_usm}\\ \vspace{2cm}
 		{\fontsize{20pt}{1em}\selectfont \bf ``\uppercase\expandafter{\@title}''}\\ \vspace{2.5cm}
@@ -610,8 +610,8 @@ con el estilo de documento `report'}{Usted debería leer la documentación de UT
 \let\@ldthebibliography\thebibliography
 \renewcommand{\thebibliography}[1]{%
     \newpage
-    \addcontentsline{toc}{chapter}{Bibliografía}
     \@ldthebibliography{#1}
+	\addcontentsline{toc}{chapter}{Bibliografía}
 }
 
 \let\@ldbibliography\bibliography
