@@ -1,6 +1,14 @@
-% Estilo de Tesis de la Universidad Técnica Federico Santa María
+% Estilo de Memoria de la Universidad Técnica Federico Santa María
 % Departamento de Informática.
-% Valparaíso, Chile
+% Santiago, Chile
+%
+% Modificado por Cristoher Arenas
+% 2015.
+%
+% Modificado de:
+%-% Estilo de Tesis de la Universidad Técnica Federico Santa María
+%-% Departamento de Informática.
+%-% Santiago, Chile
 %
 % Modificado por Romina Torres y Rodrigo Salas Fuentes 
 % 2002.
@@ -17,7 +25,7 @@
 %-% Last edit by Joseph Pallas
 %
 %
-% Ultima edición: 4 Julio 2002
+% Ultima edición: 28 Mayo 2015
 %
 
 \NeedsTeXFormat{LaTeX2e}
@@ -335,6 +343,7 @@ con el estilo de documento `report'}{Usted debería leer la documentación de UT
 \def\ma{\degree{Master of Arts}\degreeinitial{M.A.}}
 \def\ingej{\degree{Ingeniero en Ejecuci\'on}\degreeinitial{Ing.Ej.}}
 \def\ingciv{\degree{Ingeniero Civil}\degreeinitial{Ing.Civ.}}
+\def\carrer{\degree{Ingeniero Civil Inform\'atico}\degreeinitial{Ing.Civ.Inf.}}
 \ingciv % grado por defecto
 \def\magister{\degree{Mag\'ister en Ciencias de la Ingenier\'ia Inform\'atica}\degreeinitial{Mg.}\ph@dtrue}
 \def\doctor{\degre{Doctor}\degreeinitial{Dr.}\ph@dtrue}
@@ -380,6 +389,39 @@ con el estilo de documento `report'}{Usted debería leer la documentación de UT
 \def\no@breaks#1{{\def\\{ \ignorespaces}#1}}    % disallow explicit line breaks
 
 \def\titlep{
+	\thispagestyle{empty}
+	\begin{center}
+		{\fontsize{18pt}{1em}\selectfont UNIVERSIDAD T\'ECNICA FEDERICO SANTA MAR\'IA}\\ \vspace{0.5cm}
+		{\fontsize{16pt}{1em}\selectfont DEPARTAMENTO DE \uppercase\expandafter{\@dept}}\\
+		{\fontsize{14pt}{1em}\selectfont SANTIAGO -- CHILE}\\ \vspace{2cm}
+		\includegraphics[height=33mm]{images/logo_usm}\\ \vspace{2cm}
+		{\fontsize{20pt}{1em}\selectfont ``\uppercase\expandafter{\@title}''}\\ \vspace{3cm}
+		{\fontsize{14pt}{1em}\selectfont \uppercase\expandafter{\@author}}\\ \vspace{0.4cm}
+		{\fontsize{12pt}{1em}\selectfont MEMORIA DE TITULACI\'ON PARA OPTAR AL T\'ITULO DE\\ INGENIERO CIVIL INFORM\'ATICO}\\ \vspace{0.4cm}
+		{\fontsize{12pt}{1em}\selectfont PROFESOR GU\'IA: \uppercase\expandafter{\@profguia}}\\ \vspace{1cm}
+		{\fontsize{14pt}{1em}\selectfont \uppercase\expandafter{\@submitdate}}\\
+	\end{center}
+	\newpage
+}
+
+\def\signaturepage{
+	\thispagestyle{empty}
+	\begin{center}
+		{\fontsize{18pt}{1em}\selectfont \bf UNIVERSIDAD T\'ECNICA FEDERICO SANTA MAR\'IA}\\ \vspace{0.5cm}
+		{\fontsize{16pt}{1em}\selectfont \bf DEPARTAMENTO DE \uppercase\expandafter{\@dept}}\\
+		{\fontsize{14pt}{1em}\selectfont \bf SANTIAGO -- CHILE}\\ \vspace{2cm}
+		\includegraphics[height=33mm]{images/logo_usm}\\ \vspace{2cm}
+		{\fontsize{20pt}{1em}\selectfont \bf ``\uppercase\expandafter{\@title}''}\\ \vspace{2.5cm}
+		{\fontsize{14pt}{1em}\selectfont \bf \uppercase\expandafter{\@author}}\\ \vspace{0.4cm}
+		{\fontsize{12pt}{1em}\selectfont \bf MEMORIA DE TITULACI\'ON PARA OPTAR AL T\'ITULO DE\\ INGENIERO CIVIL INFORM\'ATICO}\\ \vspace{0.4cm}
+		{\fontsize{12pt}{1em}\selectfont \bf PROFESOR GU\'IA: \uppercase\expandafter{\@profguia}\\ PROFESOR CORREFERENTE: \uppercase\expandafter{\@profcorr}}\\ \vspace{0.7cm}
+		{\fontsize{14pt}{1em}\selectfont \bf \uppercase\expandafter{\@submitdate}}\\ \vspace{0.4cm}
+		{\fontsize{8.3pt}{1em}\selectfont \bf MATERIAL DE REFERENCIA, SU USO NO INVOLUCRA RESPONSABILIDAD DEL AUTOR O DE LA INSTITUCI\'ON}\\
+	\end{center}
+	\newpage
+}
+
+\def\titlepa{
     \thispagestyle{empty}
     \hspace{-0.5cm}
     \begin{center}
@@ -433,7 +475,7 @@ con el estilo de documento `report'}{Usted debería leer la documentación de UT
 \def\signature#1#2{\parbox[b]{1in}{\smash{#1}\vskip12pt}
 \hfill \parbox[t]{3in}{\shortstack{\vrule width 3in height 0.4pt\\\small#2}}}
 
-\def\signaturepage{%
+\def\signaturepagea{%
     \setcounter{page}{2}
     \begin{quotation}
     \begin{center}
@@ -505,7 +547,7 @@ con el estilo de documento `report'}{Usted debería leer la documentación de UT
     \titlep
     \iffront@pages\signaturepage\else\addtocounter{page}{1}\fi
    %\ifpermission\permissionpage\else
-    \addtocounter{page}{1} %\fi
+    %\addtocounter{page}{1} %\fi
     \iffront@pages\ifdedic@tion
         \newpage \begin{flushright}
         \ \vskip5in

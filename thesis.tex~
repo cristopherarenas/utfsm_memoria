@@ -81,6 +81,8 @@
 \title{Detección y representación de características finas en mallas de volumen tipo octree}
 \author{Cristopher Fernando Arenas Fuentes}
 
+\newcommand{\doctitle}{ACS Component Code Generation Framework}
+
 \begin{document}
 
 \selectlanguage{spanish}
