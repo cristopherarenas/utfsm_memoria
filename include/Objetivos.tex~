@@ -1,0 +1,8 @@
+\section{Objetivos}
+\label{ch:objetivos}
+
+En esta investigación, se estudiarán las distintas técnicas que se han expuesto en el estado del arte, 
+se comprobarán los problemas topológicos que traen y se estudiarán las mejoras que actualmente 
+se han implementado durante la existencia de estos algoritmos, para que finalmente, se pueda 
+proponer un flujo de trabajo que permita, a partir de una nube de puntos, poder extraer una 
+superficie del volumen de alta calidad.

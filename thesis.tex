@@ -1,0 +1,139 @@
+\documentclass[letterpaper, 12pt, notitlepage]{report}
+\usepackage[plainpages=false, colorlinks, urlcolor=black, citecolor=black,
+	linkcolor=blue]{hyperref}
+\usepackage{graphicx}
+
+%A LaTeX package which provides macros for the graphical
+%representation of the keys on a computer keyboard.
+\usepackage{keystroke}
+
+%http://ctan.dcc.uchile.cl/help/Catalogue/entries/floatrow.html
+%\usepackage{floatrow}
+
+\usepackage{longtable}
+
+\usepackage[utf8]{inputenc}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{multirow}
+\usepackage[polutonikogreek,english,spanish]{babel}
+\usepackage{epsfig}
+\usepackage{sty/utfsm_tesis}
+
+%Include Table of Contents as the first entry in TOC
+\usepackage{sty/xtocinc}
+
+%\usepackage[dvips]{epsfig}
+%\usepackage{psfig}
+
+\usepackage{caption}
+\usepackage{subcaption}
+
+%% Margenes segun Normas
+%% Ancho Legal 21,59cm /  8,5in
+%% Alto  Legal 33,02cm / 13,0in
+%\paperheight    27.81cm % alto letter
+%\paperwidth     21.59cm % ancho
+%\hoffset        -1.0in % Seteo a 0 el margen izquierdo
+%\voffset        -1.0in % Seteo a 0 el margen superior
+%\oddsidemargin  3.80cm % Margen izquierdo (pag. impar)
+%% \evensidemargin 2.55cm % Margen izquierdo (pag. par) Acrobat Winkk
+%\evensidemargin 2.59cm % Margen izquierdo (pag. par)
+%\topmargin      1.00cm % Margen superior
+%\headheight     5.00mm % Ancho encabezado
+%\headsep        8.00mm % Separacion encabezado-cuerpo
+%\textheight     23.5cm % Alto cuerpo
+%\textwidth      15.2cm % Ancho cuerpo
+%\footskip       1.30cm % Separacion piepag-cuerpo
+\parindent      0em
+\parskip        2ex
+
+% Fuzz -------------------------------------------------------------------
+\hfuzz2pt
+
+% \oddsidemargin	 0cm	% Ancho Legal 21,59cm
+% \evensidemargin 0.5cm	% Alto	Legal 35,56cm
+% \textwidth	 16.5cm
+% \topmargin	  -1.5cm
+% \textheight	 22cm
+
+\newlength{\defbaselineskip}
+\setlength{\defbaselineskip}{\baselineskip}
+
+\newcommand{\setlinespacing}[1]%
+	   {\setlength{\baselineskip}{#1 \defbaselineskip}}
+\newcommand{\doublespacing}{\setlength{\baselineskip}%
+			   {1.3 \defbaselineskip}}
+\newcommand{\singlespacing}{\setlength{\baselineskip}{\defbaselineskip}}
+
+\lstloadlanguages{C++, sh, IDL, make}
+\lstset{basicstyle=\small\sffamily, commentstyle=\slshape,
+        numbers=left, numberstyle=\tiny, numbersep=10pt,
+        extendedchars, frame=lines,
+        floatplacement=ht, captionpos=b,
+        defaultdialect=[CORBA]IDL}
+
+\ingciv
+
+\copyrightyear{2015} \submitdate{Jul 2015}
+\convocation{Jul}{2015}
+
+\title{Detección y representación de características finas en mallas de volumen tipo octree}
+\author{Cristopher Arenas}
+
+\newcommand{\doctitle}{ACS Component Code Generation Framework}
+
+\begin{document}
+
+\selectlanguage{spanish}
+
+
+\profguia{Dr. Claudio Lobos}
+\profcorr{}
+
+
+% Archivo de Agradecimientos
+\ack{include/acknowledgements}
+
+% Incluir Resumen
+\resumenesp{include/abstractes}
+
+% Incluir Abstract
+\resumening{include/abstract}
+
+% Incluir Abreviaciones
+\abreviaciones{include/glossary}
+
+\beforepreface
+\afterpreface
+
+%\numberwithin{equation}{chapter}
+
+\input{include/Introduction}
+\input{include/Abstract}
+\input{include/Propuesta}
+\input{include/Implementacion}
+\input{include/Conclusiones}
+\input{include/TrabajoAFuturo}
+
+%esto ya esta en Abstract
+%\input{include/Objetivos}
+
+%\backmatter
+%\cleardoublepage
+
+\singlespacing
+\cleardoublepage
+
+\bibliographystyle{plain}
+\bibliography{bib/papers}
+
+%\appendix
+%\input{include/appendix.tex}
+
+\appendix
+
+%\addcontentsline{toc}{chapter}{Appendix}
+%\input{include/Appendix.tex}
+
+\end{document}

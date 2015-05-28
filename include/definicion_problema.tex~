@@ -1,0 +1,17 @@
+\section{Descripción del Problema}
+
+La mallas de volumen son usadas en una variedad de problemas de simulaciones geométricas. Estas mallas son generadas por el Método de Elementos Finitos (FEM, por sus siglas en inglés, \textit{Finite Element Method}) y típicamente se utilizan hexahedros para representar un dominio geométrico discretizado. El proceso para la generación consiste en recibir como entrada una malla de superficies, que es una representación que considera solo el exterior de una geometría y generar una malla de volumen, en donde también es posible apreciar el interior.\\
+
+Las geometrías a representar en una malla de volumen puede ser geometrías de todo tipo. Hay geometrías simples, complejas, curvas y/o rectas. Ejemplos de generación de mallas existen con fines médicos, cuando se desea generar la malla de volumen un fémur \cite{Lobos2013a}, o con fines científicos, donde se puede encontrar generación de mallas de volumen de partes mecánicas complejas \cite{Marechal2009}.\\
+
+Las mallas de 
+
+
+\section{Objetivos}
+
+\begin{enumerate}
+\item Objetivo General
+\begin{itemize}
+\item 
+\end{itemize}
+\end{enumerate}

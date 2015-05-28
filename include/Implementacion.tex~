@@ -1,0 +1,9 @@
+\chapter{Implementación}
+\label{ch:implementacion}
+
+\input{include/Implementacion/Estructura}
+\input{include/Implementacion/EstructurasDeDatos}
+\input{include/Implementacion/DatosDeEntrada}
+\input{include/Implementacion/FormatoUnicoEscogido}
+\input{include/Implementacion/ConversionDeImagenesDeEntrada}
+%\input{include/Implementacion/Visualizador}

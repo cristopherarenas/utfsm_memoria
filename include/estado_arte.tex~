@@ -1,0 +1,18 @@
+\section{Estado del Arte}
+
+Las mallas de hexahedros son usadas en una variedad de problemas de simulación. En \cite{Lobos2013a} se utilizan elementos mixtos que reemplazan el uso exclusivo de hexahedros para representar objetos geométricos. Estos elementos mixtos son Tetrahedros, Pirámides, Prismas y Hexahedros.\\
+
+Los algoritmos que  considera la división de una superficie en \textit{Octrees}, hasta alcanzar un nivel de refinamiento deseado y luego clasificando lo que sucede con el el. Existen 3 tipos de clasificaciones de elementos a generar en base a su relación con la superficie:
+\begin{enumerate}
+\item Elementos completamente fuera de la superficie.
+\item Elementos completamente dentro de la superficie.
+\item Elementos en el borde de la superficie, algunos nodos del elemento están fuera de la superficie y otros están dentro.
+\end{enumerate}
+
+En el caso de los elementos en el borde de la superficie, se pueden proyectar sobre la superficie aquellos nodos del elemento que quedaron fuera de esta, pero pueden surgir problemas
+
+En \cite{Kobbelt2001} se plantea una forma
+
+
+
+\cite{Kobbelt2001}asad 

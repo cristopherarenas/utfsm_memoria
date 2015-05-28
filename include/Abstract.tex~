@@ -1,0 +1,12 @@
+%\thispagestyle{empty}
+%\vspace*{\fill}
+%
+%\selectlanguage{english}
+%\begin{center}
+%\begin{LARGE}\textbf{Abstract}\end{LARGE}
+%\end{center}
+\prefacesection{Abstract}
+In this work we will describe the state of art of the surface extraction process from a set of 
+points in a three dimensional domain, we will describe some existing techniques for this purpose 
+by using examples, showing the problems and implications they present and how other methods 
+try to solve those problems.

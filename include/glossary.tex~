@@ -1,0 +1,34 @@
+\begin{table}[h!t]
+	\begin{tabular}{lp{11cm}}
+	Vértice   & Es el punto donde concurren las dos semirrectas que conforman un ángulo.\\
+
+	Arista    & En geometría, el segmento de recta donde intersectan dos planos. Por extensión también se conoce con este
+			nombre al segmento común que tienen dos caras vecinas de un poliedro.\\
+
+	Poliedro  & Cuerpo geométrico cuyas caras son planas y encierran un volumen finito. La palabra poliedro
+			viene del griego clásico \textgreek{polyedron} \emph{(polyedron)}, de la raíz \textgreek{poolys} \emph{(polys})
+			\jcq{muchas} y de \textgreek{edra} \emph{(edra)} \jcq{base}, \jcq{asiento}, \jcq{cara}.\\
+
+	Tetraedro & Es un poliedro de cuatro caras. Con este número de caras ha de ser un
+			poliedro convexo, y sus caras triangulares, encontrándose tres de ellas en cada vértice. Si las
+			cuatro caras del tetraedro son triángulos equiláteros, iguales entre sí, el tetraedro se denomina
+			regular.\\
+
+	Píxel     & Acrónimo del inglés \emph{picture element}, \jcq{elemento de imagen}, es la menor unidad homogénea en color
+			que forma parte de una imagen digital.\\
+
+	Vóxel     & Del inglés \emph{volumetric pixel}. Es una unidad cúbica que compone un objeto
+			tridimensional. Constituye la unidad mínima procesable de un espacio tridimensional y es, por
+			tanto, el equivalente del píxel en un objeto 3D.\\
+
+	Dataset   & Es un conjunto de datos de entrada, para esta
+			implementación, un \emph{dataset} representa un conjunto de imágenes.\\
+
+	Isovalor	& Es un valor constante dentro del rango definido por la profundidad de 					color de las imágenes del \emph{dataset}.\\
+
+	Isosuperficie	& Es aquella superficie que representa los puntos de un valor constante o \emph{isovalor} (presión, temperatura, etc.) dentro de un volumen en un espacio. En otras palabras, dado un espacio escalar $f(x,y,z)$ en una region $\mathbb{R}$, una \emph{isosuperficie} es una superficie determinada por el \emph{isovalor} $\alpha$, en la que todos sus puntos cumplen que $f(x,y,z) = \alpha$.\\
+
+	%Acimut	& Es el ángulo de elevación por sobre el horizonte (o plano $XZ$), por lo que mirar hacia arriba, es lo mismo que inclinar la mirada con un acimut de $90$ grados, mientras que mirar hacia abajo es un acimut de $-90$ grados.\\
+
+	\end{tabular}
+\end{table}

@@ -1,0 +1,64 @@
+\section{Propuesta de Solución}
+
+La solución propuesta considera dos etapas. En primer lugar se realiza una detección de características finas en la malla de superficie entrante. Luego, con la información proporcionada se procederá a corregir la representación en la malla de volumen.
+
+\subsection{Detección de características}
+
+Para la detección de características se 
+
+%\begin{algorithm}
+%\caption{Detección de Características v1.0}
+%\label{alg:deteccion2}
+%\begin{algorithmic}[1]
+%\REQUIRE $Q:$ Conjunto de vértices y $E:$ Conjunto de arcos
+%\STATE $Q \leftarrow V \setminus\{v\}$
+%\STATE $l[v] \leftarrow 0$
+%\STATE Marque todos los vértices $x \in Q$ con $l[x] = \infty$
+%\FOR{$i \leftarrow 1$ \TO $|V|-1$}
+%\FORALL{$xy \in E$}
+%\STATE $l[y] \leftarrow \min{\{l[y],l[x]+w(xy)\}}$
+%\ENDFOR
+%\ENDFOR
+%\IF{hay un arco $xy$ con $l[x]+w(xy)<l[y]$}
+%\STATE \COMMENT{Hay un ciclo de costo negativo}
+%\ENDIF
+%\STATE $n \leftarrow \{\}$
+%\FORALL{$e$ in elementos}
+%\STATE $n[$\texttt{index($e$)}$] \leftarrow $\texttt{calcularnormal($e$)}
+%\ENDFOR
+%\FORALL{$e$ in elementos}
+%\STATE $contador \leftarrow 0$
+%\STATE $ne \leftarrow n[$\texttt{index($e$)}$]$
+%\STATE $v \leftarrow $\texttt{vecinos($e$)}
+%\FORALL{$vecino$ in $v$}
+%\STATE $nvec \leftarrow n[$\texttt{index($vecino$)}$]$
+%\STATE $\theta \leftarrow $\texttt{arccos(productopunto($nvec,ne$)/(norma($nvec$)$\cdot $norma($ne$)))}
+%\IF{$\theta > \theta_s$}
+%\STATE $contador++$
+%\ENDIF
+%\ENDFOR
+%\ENDFOR
+%\end{algorithmic}
+%\end{algorithm}
+
+\begin{algorithm}
+\caption{Detección de Características}
+\label{alg:deteccion}
+\begin{algorithmic}[1]
+\REQUIRE $E:$ Conjunto de arcos $F:$ Conjunto de Caras
+\STATE $E' \leftarrow \emptyset$
+\FORALL{$e$ $\in$ $E$}
+\STATE $f_1$, $f_2$ $\leftarrow$ \texttt{obtenerCarasArcoComun($e$,$F$)}
+\STATE $n_1 \leftarrow$ \texttt{obtenerVectorNormal($f_1$)} 
+\STATE $n_2 \leftarrow$ \texttt{obtenerVectorNormal($f_2$)}
+\STATE $\theta \leftarrow $ \texttt{anguloEntreNormales($n_1,n_2$)}
+\IF{$\theta > \theta_s$}
+\STATE $E' \leftarrow E' \cup e$
+\ENDIF
+\ENDFOR
+\end{algorithmic}
+\end{algorithm}
+
+\subsection{Representación de características}
+
+soon... 

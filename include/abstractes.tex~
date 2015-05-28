@@ -1,0 +1,12 @@
+%\thispagestyle{empty}
+%\vspace*{\fill}
+%
+\selectlanguage{spanish}
+%\begin{center}
+%\begin{LARGE}\textbf{Resumen}\end{LARGE}
+%\end{center}
+\prefacesection{Resumen}
+En este documento, se expondrá el estado del arte actual del proceso de extracción de 
+superficies de un conjunto de puntos en un dominio tridimensional, se describirán algunas 
+técnicas actuales para tal propósito usando ejemplos, exponiendo los problemas e implicancias 
+que estos presentan y cómo otras técnicas intentan resolver aquellos problemas.
