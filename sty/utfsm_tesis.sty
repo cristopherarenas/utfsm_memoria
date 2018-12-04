@@ -10,7 +10,7 @@
 %-% Departamento de Informática.
 %-% Santiago, Chile
 %
-% Modificado por Romina Torres y Rodrigo Salas Fuentes 
+% Modificado por Romina Torres y Rodrigo Salas Fuentes
 % 2002.
 %
 % Modificado de:
@@ -33,7 +33,7 @@
 \typeout{Tesis Info Style}
 \RequirePackage{ifthen}
 \RequirePackage{latexsym}
-\RequirePackage{tabularx}  
+\RequirePackage{tabularx}
 
 
 \typeout{Opciones de Estilo del Documento 'UTFSM_tesis'.}
@@ -47,7 +47,7 @@
     \title{Como escribir una Tesis\\
         con dos Líneas en los Títulos}
     \author{Rodrigo Salas}
-    
+
     \profguia{Profesor Guía}          %Cambiado a partir de supervisor
     \profcorr{Profesor Correferente} %Cambiado a partir de firstreader
     \profext{Profesor Externo}     %Cambiado a partir de secondreader
@@ -58,12 +58,12 @@
     }
 
     \beforepreface
- 
+
     \prefacesection{Abstract}
     Un resumen es requerido en todas las Tesis. Asegurarse que alcance en una página!.
 
     \afterpreface
- 
+
     \chapter{Introducción}
      ...
     \chapter{Conclusiones}
@@ -76,28 +76,28 @@
     \end{document}
 
 Documentación:
-    
-        Este archivo de estilo modifica el estilo de reporte estandard para 
-    respetar las "Regulaciones para la submisión de Tesis" de la escuela 
-    de graduados de la Universidad Técnica Federico Santa María. Coloca 
-    los márgenes y el interlineado requerido y desabilita los saltos de 
+
+        Este archivo de estilo modifica el estilo de reporte estandard para
+    respetar las "Regulaciones para la submisión de Tesis" de la escuela
+    de graduados de la Universidad Técnica Federico Santa María. Coloca
+    los márgenes y el interlineado requerido y desabilita los saltos de
     páginas y 'hypens'.
 
     El comando \beforepreface crea la página de título, la página de firmas
     y la página de permisos (opcionalmente). Por lo tanto el usuario debería
     colocar la sección de prefacio usando el comando \prefacesection{section title}.
-    El comando \afterpreface produce las tablas de contenidos, tablas y figuras 
-    (opcionalmente), y coloca las cosas al comienzo del cuerpo principal 
+    El comando \afterpreface produce las tablas de contenidos, tablas y figuras
+    (opcionalmente), y coloca las cosas al comienzo del cuerpo principal
     (en la página 1 con número arábigo).
-    
+
     Los siguientes comandos controla el typesetting de de tu Tesis:
-    
+
    Información Básica:
 
     \title{Título de Tesis}
         - Aparecerá grande en la página i. Si es demasiado grande
-        se separará automáticamente en líneas diferentes. Para 
-        especificar  salto de línea usar el comando \\ dentro del 
+        se separará automáticamente en líneas diferentes. Para
+        especificar  salto de línea usar el comando \\ dentro del
         título.
         \title{Very Long\\Title\\Split Over\\Several Lines}
         Asegurarse que no existe espacio antes de \\.
@@ -119,10 +119,10 @@ Documentación:
    Especificación del Grado:
 
     \msc
-        - Grado a obtener es Master of Science, M.Sc. 
-    \ma     
+        - Grado a obtener es Master of Science, M.Sc.
+    \ma
         - Grado a obtener es Master of Arts, M.A.
-    \phd    
+    \phd
         - Grado a obtain es Doctor of Philosophy, Ph.D.
     \ingej
         - Grado a obtener es Ingeniero Ejecución, Ing.Ej.
@@ -143,8 +143,8 @@ Documentación:
         - Incluye el nombre del Profesor Correferente.
     \profext{Nombre del Profesor Externo}
         - Incluye el nombre del Profesor Externo (Sólo en Magister y en Doctor)
-   
-   
+
+
    Comandos de seccionamiento:
 
     \dedicate{
@@ -154,10 +154,10 @@ Documentación:
     }
         - Produce la página opcional de dedicación.
         Se debe colocar antes del comando \beforepreface.
-    
+
     \prefacesection{Cualquier cosa}
     Blah, blah, blah...
-        - Produce una sección de prefacio como el Resumen, 
+        - Produce una sección de prefacio como el Resumen,
           reconocimientos, etc. Debe aparecer entre los comandos
           \beforepreface \afterpreface.
           Typeset similar a los capítulos y no está numerado.
@@ -168,31 +168,31 @@ Documentación:
 
     \section{Nombre de la sección}
         - Colocado después del capítulo.
-    
+
     \subsection{Nombre de la sección}
         - Colocado después de una sección.
 
     \appendix
         - Colocar este comando antes del primer capítulo apéndice.
-          Usar el comando \chapter.  Será colocado con letra y no 
+          Usar el comando \chapter.  Será colocado con letra y no
           con número.
 
     \nonumchapter{Cualquier cosa}
     Blah, blah, blah...
-        - Produce una sección de capítulo que no está numerado, 
-          como por ejemplo la Introducción. Se utiliza de la 
+        - Produce una sección de capítulo que no está numerado,
+          como por ejemplo la Introducción. Se utiliza de la
           misma manera que el comando \chapter.
 
    Imprimiendo copias draft:
 
     \draft
-        - Para imprimir copias draft de la tesis. Especifica en la 
+        - Para imprimir copias draft de la tesis. Especifica en la
         cabecera que la copia es un draft y espicifica la fecha de impresión.
         También especifica el draft y la fecha en la página título.
 
     \nofront
-        - Especifica no imprimir las páginas de firma y Permisos, 
-        tablas de contenidos, y la lista de las figuras y tablas. 
+        - Especifica no imprimir las páginas de firma y Permisos,
+        tablas de contenidos, y la lista de las figuras y tablas.
         Util para las copias de borrador para disminuir la impresión.
 
     \nobib
@@ -207,7 +207,7 @@ Documentación:
         - No produce la Lista de las tablas.
     \twosupervisors
         - Utilizar cuando se tiene dos supervisores en vez de uno.
-          Nombre dado por \profguia{} va primero, \profcorr{} 
+          Nombre dado por \profguia{} va primero, \profcorr{}
           va segundo. Puede ir con el formato de Ph.D.
     \univerity{Nombre de la Universidad}
         - "Universidad Técnica Federico Santa María" por defecto.  Se puede usar salto de línea.
@@ -233,10 +233,10 @@ Se puede cambiar al hacer:
 (o cualquier cosa que se desee en vez de 1.5)
 
 Desafortunadamente, probablemente el comando no tenga efecto al menos que esté antes que
-\begin{document} o después del comando de cambio del tamańo de la letra  como por ejemplo 
+\begin{document} o después del comando de cambio del tamańo de la letra  como por ejemplo
 \small or \normalsize.
 
-El ejemplo de arriba muestra 12pt substyle siendo utilizado. Esto es requerido 
+El ejemplo de arriba muestra 12pt substyle siendo utilizado. Esto es requerido
 para entregar una copia, pero se puede omitir para imprimir un borrador más pequeńo.
 Notar que el material del front puede no verse bien en una copia pequeńa.
 }
@@ -249,13 +249,13 @@ Notar que el material del front puede no verse bien en una copia pequeńa.
 
 
 % Define la cabecera de la página para enumerarla solamente.
-%\newcommand{\properpagestyle}{ 
+%\newcommand{\properpagestyle}{
 %       \pagestyle{myheadings}\markboth{}{}\markright{}}
-\newcommand{\properpagestyle}{ 
+\newcommand{\properpagestyle}{
        \pagestyle{plain}}
 
 
-% Lo primero que se hace es ver si el reporte ha sido cargado. 
+% Lo primero que se hace es ver si el reporte ha sido cargado.
 % Un error común es tratar de usar suthesis como un documentstyle.
 
 \@ifundefined{chapter}{\@latexerr{La opción de `UTFSM_Tesis' debería ser usado
@@ -265,7 +265,7 @@ con el estilo de documento `report'}{Usted debería leer la documentación de UT
 % Las Tesis son por un lado, por lo tanto no nos preopcupamos por \evensidemargin
 %\oddsidemargin 0.5in \evensidemargin 0in
 \marginparwidth 40pt \marginparsep 10pt
-%\topmargin 0pt 
+%\topmargin 0pt
 \headsep .5in
 %\textheight 8.1in \textwidth 6in
 
@@ -286,7 +286,7 @@ con el estilo de documento `report'}{Usted debería leer la documentación de UT
 % y arreglar tales saltos de páginas.)
 \brokenpenalty=10000
 
-% Usar 1.37 veces el salto baseline-to-baseline normal 
+% Usar 1.37 veces el salto baseline-to-baseline normal
 \renewcommand{\baselinestretch}{1.37}
 
 % Redefinir los macors utilizados para flotantes (incluyendo tablas y figuras)
@@ -305,14 +305,14 @@ con el estilo de documento `report'}{Usted debería leer la documentación de UT
 %             \if\@tempa b\advance\@tempcnta 4\relax\fi
 %             \if\@tempa p\advance\@tempcnta 8\relax\fi
 %     }\global\count\@currbox\@tempcnta}\@fltovf\fi
-%    \global\setbox\@currbox\vbox\bgroup 
+%    \global\setbox\@currbox\vbox\bgroup
 %    \def\baselinestretch{1}\@normalsize
 %    \boxmaxdepth\z@
 %    \hsize\columnwidth \@parboxrestore}
 
 % Redefinir los macros utilizados para los pie de páginas para usar espaciamiento simple.
 \long\def\@footnotetext#1{\insert\footins{\def\baselinestretch{1}\footnotesize
-    \interlinepenalty\interfootnotelinepenalty 
+    \interlinepenalty\interfootnotelinepenalty
     \splittopskip\footnotesep
     \splitmaxdepth \dp\strutbox \floatingpenalty \@MM
     \hsize\columnwidth \@parboxrestore
@@ -373,8 +373,8 @@ con el estilo de documento `report'}{Usted debería leer la documentación de UT
 \def\nofront{\front@pagesfalse\permissionfalse\figurespagefalse\tablespagefalse}
 
 % New if constructs:    Default conditions:
-\newif\ifpermission     \permissiontrue  
-\newif\iffigurespage    \figurespagetrue 
+\newif\ifpermission     \permissiontrue
+\newif\iffigurespage    \figurespagetrue
 \newif\iftablespage     \tablespagetrue
 \newif\iffront@pages    \front@pagestrue
 \newif\ifthird@reader   \third@readerfalse
@@ -428,7 +428,7 @@ con el estilo de documento `report'}{Usted debería leer la documentación de UT
     \begin{tabular}{c >{\centering\vspace{-1.7cm}}p{9.5cm} c}
     \epsfig{file=images/logo_inf,width=65pt} &
     \textsc{\expandafter{\@university} \\
-    Departamento de \expandafter{\@dept} \\  
+    Departamento de \expandafter{\@dept} \\
     Santiago -- Chile} &
     \epsfig{file=images/logo_usm,width=70pt}
     \end{tabular}
@@ -456,10 +456,10 @@ con el estilo de documento `report'}{Usted debería leer la documentación de UT
     \begin{center}
         %Como requisito para optar al grado de:\\
         %\uppercase\expandafter{\@degree} \\
-    
+
         %\uppercase\expandafter{\@university} \\
         %\uppercase\expandafter{\@address} \\
-        \vskip0.27in       
+        \vskip0.27in
         \large Comisión Evaluadora: \\
         \large \expandafter{\@profguia} (Gu\'ia, UTFSM) \\
         \large \expandafter{\@profcorr} (Correferente, UTFSM)\\
@@ -483,29 +483,29 @@ con el estilo de documento `report'}{Usted debería leer la documentación de UT
         Departamento de \expandafter{\@dept} \\
         Santiago -- Chile}
         %\uppercase\expandafter{\@university} \\
-        %DEPARTMENTO DE 
+        %DEPARTMENTO DE
         %\uppercase\expandafter{\@dept}
     \end{center}
-    
+
     \null\vskip0.2in
-    
+
     \noindent T\'ITULO DE LA MEMORIA:\\
     \textbf{\uppercase\expandafter{\@title}}
-    
+
     \null\vskip0.2in
-    
+
     \noindent AUTOR:\\
     \textbf{\uppercase\expandafter{\@author}}
-    
-    
+
+
     \null\vskip0.2in
-    
+
     %Tesis presentada como requerimiento parcial para optar al grado académico de
     %\textbf{\@degree} y al t\'itulo profesional de \textbf{Ingeniero Civil en Inform\'atica} \ de la \@university.
 
     %Memoria presentada como requerimiento parcial para optar
     %al t\'itulo profesional de \textbf{Ingeniero Civil en Inform\'atica} \ de la \@university.
-    Memoria de titulaci\'on para optar al t\'itulo de \textbf{Ingeniero Civil en Inform\'atica} de la \@university. 
+    Memoria de titulaci\'on para optar al t\'itulo de \textbf{Ingeniero Civil en Inform\'atica} de la \@university.
 
     \iffourth@reader
         \def\sigskip{\vskip0.15in plus 0.2in minus 0.1in}
@@ -520,18 +520,18 @@ con el estilo de documento `report'}{Usted debería leer la documentación de UT
         \signature{\@profguia}{Profesor Gu\'ia} \\
         \sigskip \signature{\@profcorr}{Profesor Correferente} \\
         \sigskip \signature{\@profext}{Profesor Externo} \\
-        
+
     \else % not Ph.D. degree:
         \beginskip
         \signature{Profesor Gu\'ia:}{\@profguia} \\
         \sigskip \signature{Profesor Correferente}{\@profcorr} \\
     \fi
 
-        
+
     \vskip0.2in plus 1fill minus 0.1in
     \begin{flushright}
     \@submitdate. \\
-    Santiago, Chile. 
+    Santiago, Chile.
     \end{flushright}
 
 
@@ -555,8 +555,8 @@ con el estilo de documento `report'}{Usted debería leer la documentación de UT
         \dedication@text
         \end{flushright}
     \fi\fi
-    
-    
+
+
     % ------------------------------------------------------------------------
     {
     \typeout{Acknowledgements}
@@ -570,22 +570,24 @@ con el estilo de documento `report'}{Usted debería leer la documentación de UT
     \typeout{Abstract}
     \include{\@resumening}
     }
-         
+
     \iffront@pages\tableofcontents\else\addtocounter{page}{1}\fi
     \newpage
     \iftablespage
-        \addcontentsline{toc}{chapter}{Lista de Tablas}\listoftables
+        \listoftables
+        \addcontentsline{toc}{chapter}{Lista de Tablas}
         \newpage
     \fi
     \iffigurespage
-        \addcontentsline{toc}{chapter}{Lista de Figuras}\listoffigures
+        \listoffigures
+        \addcontentsline{toc}{chapter}{Lista de Figuras}
         \newpage
     \fi
-    {\typeout{Abbreviations} 
-     \include{\@abreviaciones}   
-     }    
-    
-    
+    {\typeout{Abbreviations}
+     \include{\@abreviaciones}
+     }
+
+
 }
 \def\nonumchapter#1{%
     \chapter*{#1}
@@ -605,7 +607,7 @@ con el estilo de documento `report'}{Usted debería leer la documentación de UT
     \typeout{Las páginas del prefacio de la UTFSM_Tesis han sido escritas}
     \properpagestyle}
 
-% Redefine \thebibliography para ir a una nueva página y colocar la entrada en la 
+% Redefine \thebibliography para ir a una nueva página y colocar la entrada en la
 % tabla de contenidos
 \let\@ldthebibliography\thebibliography
 \renewcommand{\thebibliography}[1]{%
